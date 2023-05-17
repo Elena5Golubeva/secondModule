@@ -125,7 +125,6 @@ a {
     gap: 32px;
     padding-top: 105px;
     padding-bottom: 98px;
-    /* border-bottom: 5px solid #ececec;*/
 }
 
 .service__content {
@@ -195,7 +194,6 @@ a {
 .text_width {
     width: 536px;
     margin: auto;
-    /* padding-bottom: 33px; */
     text-align: center;
 }
 
@@ -204,18 +202,19 @@ a {
     height: 5px;
     background: #FF2D2D;
     margin: auto;
-    margin-top: 33px; 
+    margin-top: 33px;
 }
 
 .products__box {
     padding-top: 86px;
 }
+
 .products__links {
     display: flex;
     justify-content: center;
     gap: 64px;
-
 }
+
 .products__link {
     font-style: italic;
     font-weight: 600;
@@ -234,6 +233,7 @@ a {
 .products__link_active {
     color: #FF2D2D;
 }
+
 .products__contents {
     display: flex;
     gap: 16px;
@@ -242,6 +242,323 @@ a {
     padding-left: calc(50% - 1252px / 2);
     padding-right: calc(50% - 1252px / 2);
 }
+
 .products__content {
     display: flex;
+}
+
+.meet {
+    margin-top: 132px;
+    padding-left: calc(50% - 609px);
+    padding-bottom: 115px;
+}
+
+.meet__head {
+    padding-bottom: 0;
+}
+
+.text_small {
+    width: 450px;
+}
+
+.meet__text {
+    margin-top: 34px;
+    margin-bottom: 37px;
+}
+
+.meet__line {
+    width: 132px;
+    height: 5px;
+    background-color: #FF2D2D;
+}
+
+.meet__content {
+    margin-top: 66px;
+    display: flex;
+    gap: 75px;
+}
+
+.meet__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30.127px;
+    letter-spacing: 0.275265px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 29px;
+    margin-top: 16px;
+}
+
+.text__big {
+    max-width: 650px;
+}
+
+.meet__links {
+    display: flex;
+    gap: 28px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.meet__link {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    color: #000000;
+}
+
+.meet__link:hover {
+    text-decoration: underline;
+}
+
+.meet__peoples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 58px;
+}
+
+.meet__img {
+    width: 180px;
+    height: 215px;
+}
+
+.subscribe {
+    padding-top: 115px;
+    padding-bottom: 104px;
+    background: #2D2D2D;
+    text-align: center;
+}
+
+.heading__reverse {
+    color: #FFFFFF;
+    text-transform: none;
+    padding-bottom: 0;
+}
+
+.text__reverse {
+    color: #FFFFFF;
+}
+
+.subscribe__text {
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.subscribe__form {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.subscribe__input {
+    width: 524px;
+    height: 82px;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C2C;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.subscribe__button {
+    background: #FF2D2D;
+    padding-left: 56px;
+    padding-right: 56px;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    transition: all .3s;
+    border: 2px solid transparent;
+}
+
+.subscribe__button:hover {
+    background-color: #fff;
+    color: #FF2D2D;
+    border: 2px solid #000;
+}
+
+.get {
+    padding-top: 104px;
+    padding-bottom: 107px;
+    padding-left: calc(50% - 1250px / 2);
+}
+
+.get__text {
+    width: 750px;
+    margin-top: 45px;
+    margin-bottom: 58px;
+}
+
+.get__form {
+    width: 734px;
+    display: grid;
+    grid-row-gap: 43px;
+    grid-column-gap: 52px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.get__input {
+    height: 69px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+}
+
+.get__input_textarea {
+    height: 252px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    resize: none;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+}
+.get__content {
+    display: flex;
+    margin-top: 74px;
+    gap: 104px;
+    flex-wrap: wrap;
+}
+.get__contacts {
+    background:#2D2D2D;
+    border-radius: 5px;
+    padding-left: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+.get__button {
+    background: #FF3838;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    height: 75px;
+    grid-column: 1 / -1;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+
+.get__button:hover {
+    background-color: #fff;
+    color: #FF3838;
+    border: 2px solid #FF3838;
+}
+
+.get__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.get__contacts-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 315px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Адаптив */
+@media (max-width: 1124px) {
+    .top__info {
+        width: 400px;
+    }
+
+    .top__video {
+        width: 430px;
+    }
+
+    .top__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .first {
+        width: 400px;
+    }
+
+    .service {
+        margin-left: 100px;
+    }
+
+    .products__links {
+        gap: 45px;
+    }
+    .products__contents {
+        justify-content: center;
+    }
+
+    .meet__top {
+        margin-left: 60px;
+    }
+
+    .heading__reverse {
+        font-size: 31px;
+    }
+
+    .subscribe__input {
+        width: 516px;
+        height: 70px
+    }
+
+    .subscribe__button {
+        font-size: 20px;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    .get {
+        padding-left: calc(50% - 800px / 2);
+    }
+}
+
+@media (max-width: 830px) {
+
 }
