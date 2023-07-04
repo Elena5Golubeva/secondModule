@@ -6,7 +6,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
+.fa-solid {
+    display: none !important;
+}
 img {
     max-width: 100%;
 }
@@ -685,9 +687,45 @@ a {
     .top {
         padding-bottom: 60px;
     }
-
+    .fa-solid {
+        display: var(--fa-display, inline-block) !important;
+    }
+    .fa-bars {
+        margin-right: 32px;
+    }
+    .fa-xmark {
+        position: absolute;
+        top:32px;
+        right: 32px;
+    }
     .top__content {
+        position: relative;
         padding-left: 80px;
+    }
+    .top__header {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 100%;
+    }
+    .nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        transition: left .5s;
+        background-color: #000;
+    }
+    
+    .menu {
+        flex-direction: column;
+    }
+    .menu__list_active {
+        background: none;
     }
 
     .top__video {
@@ -695,7 +733,8 @@ a {
     }
 
     .top__title {
-        width: 450px
+        width: 450px;
+        letter-spacing: 0.5px;
     }
 
     .meet__info {

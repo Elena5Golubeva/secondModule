@@ -12,19 +12,22 @@
 
     <title>Верстка макета</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <script src="https://kit.fontawesome.com/39d9b5c200.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="top center">
         <div class="top__header">
-            <nav>
+            <i class="fa-solid fa-bars fa-2xl" style="color: #f9fafb;"></i>
+            <nav class="nav">
                 <ul class="menu">
                     <li class="menu__link"><a href="#" class="menu__list menu__list_active">home</a></li>
                     <li class="menu__link"><a href="#" class="menu__list">portfolio</a></li>
                     <li class="menu__link"><a href="#" class="menu__list">about us</a></li>
                     <li class="menu__link"><a href="#" class="menu__list">contact</a></li>
-
                 </ul>
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #f7f7f8;"></i>
             </nav>
         </div>
         <div class="top__content">
@@ -181,6 +184,18 @@
         let year = today.getFullYear();
 
         footerYearEl.textContent = year;
+
+        const faEl=document.querySelector('.fa-bars');
+        const navEl=document.querySelector('.nav');
+        faEl.addEventListener('click', function (e) {
+            navEl.style.left=0;
+        });
+
+        const closeEl=document.querySelector('.fa-xmark');
+        closeEl.addEventListener('click', function (e) {
+            navEl.style.left= '-100%';
+        });
+       
     </script>
 </body>
 
